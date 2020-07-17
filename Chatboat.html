@@ -1,0 +1,49 @@
+<html>
+<head>
+
+
+
+<script>
+know={
+
+"Hello":"Hi there!",
+"who are you?":"I am Pinky's Assistant",
+"How are you?":"I am Fine"
+};
+
+function talk(){
+var user = document.getElementByld("userBox").value;
+document.getElementByld("userBox").value="";
+document.getElementByld("chatLog").innerHTML += user+"<br>";
+
+if(user in know){
+document.getElementByld("chatlog").innerHTML += know[user]+"<br>";
+} else
+{
+
+document.getElementByld("chatLog").innerHTML += "I don't understand...<br>";
+}
+}
+
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+<body>
+<p id="chatLog">--Chatbot by sky3Day tech--<br></p>
+<input id="userBox" type="text" onkeydown="if(event.keyCode==13){talk()}">
+
+
+</body>
+
+
+
+
+</html>
